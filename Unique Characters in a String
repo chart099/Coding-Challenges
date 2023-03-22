@@ -1,0 +1,10 @@
+def unique_characters(string_in):
+  if string_in == '':
+    return 'Error'
+  else:
+    for char in string_in:
+      if string_in.count(char) == 1:
+        continue
+      else:
+        return False
+    return True
