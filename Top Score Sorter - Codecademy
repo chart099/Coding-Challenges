@@ -1,0 +1,13 @@
+#Challenge = sort score in an array in descending order, any scores above the give top score need to be removed
+
+
+def score_sorter(array, top_score):
+  array.sort(reverse = True)
+  for score in array:
+   if score > top_score:
+     array.remove(score)
+  return array
+
+  
+
+print(score_sorter([1, 2, 3, 9999, 13], 10000) )
