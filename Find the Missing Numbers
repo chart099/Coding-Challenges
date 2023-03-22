@@ -1,0 +1,9 @@
+def missing_nos(arr, k):
+  ref = []
+  result = []
+  for number in range(1, arr[-1]):
+    ref.append(number)
+  for num in ref:
+    if num not in arr:
+      result.append(num)
+  return result
